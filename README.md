@@ -74,3 +74,18 @@ Constraints
 *1 <= s, t, a, b, m, n <= 10^5
 *-10^5 <= 5 <= 10^5
 *a < s < t < b*
+
+### Kangaroo
+There are two kangaroos on an x-axis ready to jump in the positive direction (i.e, toward positive infinity). The first kangaroo starts at location x(1) and moves at a rate of v(1) meters per jump. The second kangaroo starts at location x(2) and moves at a rate of v(2) meters per jump. Given the starting locations and movement rates for each kangaroo, can you determine if they'll ever land at the same location at the same time?
+
+Input Format
+A single line of four space-separated integers denoting the respective values of x(1), v(1), x(2), and v(2).
+
+Constraints
+*0 <= x(1) < x(2) <= 10000
+*1 <= v(1) <= 10000
+*1 <= v(2) <= 10000*
+
+Output Format
+Print YES if they can land on the same location at the same time; otherwise, print NO.
+Note: The two kangaroos must land at the same location after making the same number of jumps.
