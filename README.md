@@ -89,3 +89,28 @@ Constraints
 Output Format
 Print YES if they can land on the same location at the same time; otherwise, print NO.
 Note: The two kangaroos must land at the same location after making the same number of jumps.
+
+### Between Two Sets
+Consider two sets of positive integers, A and B. We say that a positive integer,x , is between sets A and B if the following conditions are satisfied:
+
+All elements in A are factors of x.
+x is a factor of all elements in B.
+Given A and B, find and print the number of integers (i.e., possible 's) that are between the two sets.
+
+Input Format
+The first line contains two space-separated integers describing the respective values of  n(the number of elements in set A) and  m (the number of elements in set )B.
+The second line contains n distinct space-separated integers describing A.
+The third line contains m distinct space-separated integers describing B.
+
+Constraints
+*1 <= n, m <= 10,
+*1 <= a <= 100,
+*1 <= b <= 100*
+Sample Input
+2 3
+2 4
+16 32 96
+Sample Output
+3
+Explanation
+The integers that are between A = {2, 4} and B = {16, 32, 96} are 4, 8, and 16.
