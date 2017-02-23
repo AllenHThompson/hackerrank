@@ -135,3 +135,47 @@ Sample Input
 1 3 2 6 1 2
 Sample Output
 5
+
+### Richie Richie
+A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward as it does forward. For example, madam is a palindrome. Make the n-digit number palindromic by changing no more than k digits. You can only change 1 digit at a time, and cannot add digits to (or remove digits from) the number.
+
+Given k and an n-digit number, determine the largest possible number that can make by changing <= k digits.
+
+Note: Treat the integers as numeric strings. Leading zeros are permitted and can't be ignored (So 0011 is not a palindrome, 0110 is a valid palindrome). A digit can be modified more than once.
+
+Constraints
+*0 < n <= 10^5
+*0 < k <= 10^5
+*Each character i in the number is an integer where 0 <= i <= 9.*
+Output Format
+Print a single line with the largest number that can be made by changing no more than k digits; if this is not possible, print -1.
+
+Sample Input 0
+n = 4
+k = 1
+number = "3943"
+Sample Output
+"3993"
+
+Sample Input 1
+n = 6
+k = 3
+number = "092282"
+Sample Output
+"992299"
+
+Sample Input 2
+n = 4
+k = 1
+number = "0011"
+"0011"
+Sample Output
+-1
+
+Explanation
+Sample 0
+There are two ways to make 3943 a palindrome by changing exactly k=1 digits:
+1. 3443
+2. 3993
+
+3993 > 3443, so we print.
