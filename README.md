@@ -277,3 +277,27 @@ Sample Output
 "okffng-Qwvb"
 Explanation
 Each unencrypted letter is replaced with the letter occurring K spaces after it when listed alphabetically. Think of the alphabet as being both case-sensitive and circular; if K rotates past the end of the alphabet, it loops back to the beginning (i.e.: the letter after z is a, and the letter after Z is A).
+
+### Mars Exploration
+Letters in some of the SOS messages are altered by cosmic radiation during transmission. Given the signal received by Earth as a string, S, determine how many letters of Sami's SOS have been changed by radiation.
+
+Input Format
+There is one line of input: a single string, S.
+Note: As the original message is just SOS repeated  times, S's length will be a multiple of 3.
+
+Constraints
+*1 <= S <= 99*
+*S % 3 = 0*
+*S will contain only uppercase English letters.*
+
+Output Format
+Print the number of letters in Sami's message that were altered by cosmic radiation.
+
+Sample Input 0
+"SOSSPSSQSSOR"
+Sample Output 0
+3
+Sample Input 1
+"SOSSOT"
+Sample Output 1
+1
