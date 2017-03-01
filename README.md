@@ -385,3 +385,38 @@ BBBBB => B, 4 deletions
 ABABABAB => ABABABAB, 0 deletions
 BABABA => BABABA, 0 deletions
 AAABBB => AB, 4 deletions because to convert it to AB we need to delete 2 A's and 2 B's
+
+### Beautiful Binary String
+Alice has a binary string, B, of length n. She thinks a binary string is beautiful if and only if it doesn't contain the substring "010". In one step, Alice can change a 0 to a 1 (or vice-versa). Count and print the minimum number of steps needed to make Alice see the string as beautiful.
+
+Input Format
+The first line contains an integer, n (the length of binary string B).
+The second line contains a single binary string, B, of length n.
+
+Constraints
+*1 <= n <= 100*
+
+Output Format
+Print the minimum number of steps needed to make the string beautiful.
+
+Sample Input 0
+7
+"0101010"
+Sample Output 0
+2
+Sample Input 1
+5
+"01100"
+Sample Output 1
+0
+Sample Input 2
+10
+"0100101010"
+Sample Output 2
+3
+Explanation
+Sample Case 0:
+In this sample, B = "0101010"
+Sample Case 1:
+In this sample, B = "01100"
+The substring "010" does not occur in B, so the string is already beautiful and we print 0.
