@@ -511,3 +511,58 @@ Sample Output
 2
 0
 1
+
+### Making Anagrams
+Alice is taking a cryptography class and finding anagrams to be very useful. We consider two strings to be anagrams of each other if the first string's letters can be rearranged to form the second string. In other words, both strings must contain the same exact letters in the same exact frequency For example, bacdc and dcbac are anagrams, but bacdc and dcbad are not. Alice decides on an encryption scheme involving two large strings where encryption is dependent on the minimum number of character deletions required to make the two strings anagrams. Can you help her find this number? Given two strings, a and b, that may or may not be of the same length, determine the minimum number of character deletions required to make a and b anagrams. Any characters can be deleted from either of the strings.
+
+Input Format
+The first line contains a single string, a.
+The second line contains a single string, b.
+
+Constraints
+*1 <= |a|, |b| <= 10^4*
+*It is guaranteed that a and b consist of lowercase English letters.*
+
+Output Format
+Print a single integer denoting the number of characters which must be deleted to make the two strings anagrams of each other.
+
+Sample Input
+cde
+abc
+
+Sample Output
+4
+
+### Game of Thrones
+Dothraki are planning an attack to usurp King Robert's throne. King Robert learns of this conspiracy from Raven and plans to lock the single door through which the enemy can enter his kingdom. But, to lock the door he needs a key that is an anagram of a certain palindrome string. The king has a string composed of lowercase English letters. Help him figure out whether any anagram of the string can be a palindrome or not.
+
+Input Format
+A single line which contains the input string.
+
+Constraints
+*1 <= length of string <= 10^5*
+*Each character of the string is a lowercase English letter.*
+
+Output Format
+A single line which contains YES or NO in uppercase.
+
+Sample Input : 01
+aaabbbb
+Sample Output : 01
+YES
+Explanation
+A palindrome permutation of the given string is bbaaabb.
+
+Sample Input : 02
+cdefghmnopqrstuvw
+Sample Output : 02
+NO
+Explanation
+You can verify that the given string has no palindrome permutation.
+
+Sample Input : 03
+cdcdcdcdeeeef
+Sample Output : 03
+YES
+Explanation
+A palindrome permutation of the given string is ddcceefeeccdd.
